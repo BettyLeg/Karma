@@ -1,3 +1,9 @@
+.krm001{
+  --border:1px solid #ddd;
+  --background-img:url('https://imgix.bustle.com/uploads/image/2020/10/28/1f4a9f1a-c5ef-4147-9cf7-7871c9c4e8b0-screen-shot-2020-10-28-at-14200-pm.png?w=1200&h=630&fit=crop&crop=focalpoint&fm=jpg&fp-x=0.436&fp-y=0.5778301886792453');
+  --accent:#AFBC8A;
+  --background-opacity:#000c;
+}
 .krm001-baul{
   margin:10px auto;
   width:520px;

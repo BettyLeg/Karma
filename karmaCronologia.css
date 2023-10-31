@@ -52,6 +52,7 @@
   letter-spacing:1px;
   font-weight:500;
 }
+.krm001-content > br,.krm001-temas > br{display:none;}
 .krm001-temas{
   display:grid;
   gap:20px;

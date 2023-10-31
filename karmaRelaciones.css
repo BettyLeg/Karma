@@ -4,7 +4,7 @@
   --accent:#AFBC8A;
   --background-opacity:#000c;
 }
-
+.krm001b-content > br,.krm001-personajes > br{display:none;}
 .krm001-baul{
   margin:10px auto;
   width:520px;

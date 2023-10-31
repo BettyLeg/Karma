@@ -1,0 +1,110 @@
+.krm001{
+  --border:1px solid #ddd;
+  --background-img:url('https://imgix.bustle.com/uploads/image/2020/10/28/1f4a9f1a-c5ef-4147-9cf7-7871c9c4e8b0-screen-shot-2020-10-28-at-14200-pm.png?w=1200&h=630&fit=crop&crop=focalpoint&fm=jpg&fp-x=0.436&fp-y=0.5778301886792453');
+  --accent:#AFBC8A;
+  --background-opacity:#000c;
+}
+
+.krm001-baul{
+  margin:10px auto;
+  width:520px;
+  border:var(--border);
+  background:var(--background-img);
+  background-size:cover;
+  background-position:center;
+  position:relative;
+  z-index:1;
+}
+.krm001-baul:before{
+  content:"";
+  width:100%;
+  height:100%;
+  backdrop-filter:grayscale(1) blur(3px);
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:-2;
+}
+.krm001b-content:after{
+  width:100%;
+  height:100%;
+  content:"";
+  position:absolute;
+  background:var(--accent);
+  top:0;
+  z-index:1;
+  opacity:.2;
+}
+.krm001b-content{
+  z-index:3;
+  font-family:'poppins';
+  background:var(--background-opacity);
+}
+.krm001b-minititle{
+  height:35px;
+  border-bottom:1px solid var(--accent);
+  background:var(--background-opacity);
+  color:#fff;
+  display:flex;
+  align-items:center;
+  text-transform:uppercase;
+  font-size:10px;
+  padding:0 20px;
+  letter-spacing:1px;
+  font-weight:500;
+}
+.krm001b-minisubtitle{
+  border-top:var(--border);
+  height:30px;
+  border-color:var(--accent);
+  background:var(--background-opacity);
+}
+.krm001-personaje {
+    height: 146px;
+    border: var(--border);
+    border-color: var(--accent);
+    padding: 4px;
+    box-sizing: border-box;
+  position:relative;
+  overflow:hidden;
+}
+
+.krm001-personajes {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3,146px);
+}
+.krm001-personajes {
+    padding: 30px;
+    position: relative;
+    z-index: 2;
+}
+.krm001-personaje > img{
+  width:136px;
+}
+.krm001-pd{
+  margin:4px;
+  position:absolute;
+  top:0px;
+  width:100%;
+  height:136px;
+ display:flex;
+  align-items:center;
+  left:0;
+  background:#0006;
+  justify-content:center;
+  backdrop-filter:blur(2px);
+  transition:.4s ease-in;
+  opacity:0;
+}
+.krm001-pd:hover{
+  opacity:1;
+}
+.krm001-pd > b{
+  font-family:'Yeseva One';
+  font-size:20px;
+  font-weight:400;
+  text-transform:uppercase;
+  text-shadow: 3px -2px var(--accent);
+  color:#fff;
+}
